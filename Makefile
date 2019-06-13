@@ -1,2 +1,2 @@
 sources:
-	spectool -g sshpass.spec
+	spectool -g sshpass.specs
