@@ -6,7 +6,7 @@ License:    GPLv2
 Group:      Applications/Internet
 Url:        http://sshpass.sourceforge.net/
 Source0:    http://downloads.sourceforge.net/sshpass/sshpass-%{version}.tar.gz
-
+a
 %description
 Tool for non-interactively performing password authentication with so called
 "interactive keyboard password authentication" of SSH. Most users should use
