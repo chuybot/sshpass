@@ -24,7 +24,7 @@ pipeline {
       //    sh "git push origin HEAD"
        // }
           withCredentials([sshUserPrivateKey(credentialsId: '9b2359bb-540b-4df3-a4b7-d304a426b2db', keyFileVariable: 'SSH_KEY')]) {
-   sh("git push origin HEAD")
+          sh "git push origin HEAD"
 }
 //        withCredentials([usernamePassword(credentialsId: '7d6064c2-591d-41d1-a92a-fc26b9c7cd64', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
   //          
