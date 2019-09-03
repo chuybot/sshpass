@@ -11,11 +11,11 @@ pipeline {
     }
     stage('change') {
       steps {
-        sh "echo a> a"
+        sh "touch a"
         sh "git add a"
         sh "git config user.name 'Intel Kubernetes CI/CD Robot'"
         sh "git config user.email 'k8s-bot@intel.com'"
-        sh "git commit -m -s 'Add extra character'"
+        sh "git commit -m -s 'Add file'"
         withCredentials([usernamePassword(credentialsId: '7d6064c2-591d-41d1-a92a-fc26b9c7cd64', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
             
             sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@<REPO> origin HEAD"
