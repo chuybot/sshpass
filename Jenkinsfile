@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+    node {
+        label 'abc'
+    }
   stages {
     stage('Simple Test') {
       when {
