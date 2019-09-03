@@ -19,6 +19,7 @@ pipeline {
         sh "git config user.email 'k8s-bot@intel.com'"
         sh "git commit -s -m 'Add character'"
         sh "git remote set-url origin git@github.com:chuybot/sshpass.git"
+        sh "git remote -v"
         sshagent(['9b2359bb-540b-4df3-a4b7-d304a426b2db']) {
           sh "git push origin HEAD"
         }
