@@ -8,7 +8,7 @@ pipeline {
           branch 'master'
       }
       steps {
-        sh 'echo wooow'
+        sh 'env'
       }
     }
     stage('change') {
